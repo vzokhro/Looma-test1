@@ -1,0 +1,980 @@
+HTML for LOOMA TEST 1.
+<div class="app">
+
+  <!-- Top Nav -->
+  <div class="topnav">
+    <h1 class="logo">looma</h1>
+    <div class="nav-icons">
+      <button class="icon-btn" id="search-icon">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+      <button class="icon-btn" id="notif-icon">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Feed -->
+  <div class="feed">
+
+    <!-- Post Component 1 -->
+    <div class="post">
+      <div class="post-header">
+        <div class="post-left">
+          <div class="avatar-placeholder"></div>
+          <div class="post-info">
+            <div class="name-row">
+              <p class="username">@username</p>
+              <span class="verified">✓</span>
+            </div>
+            <div class="skills-row">
+              <span class="skill">Fiber Weaver</span>
+              <span class="skill">Artisan</span>
+            </div>
+          </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+
+      <!-- Carousel -->
+      <div class="carousel" id="carousel-1">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Fiber & Weaving</span>
+              <span class="price-tag">₹2,450</span>
+              <p>Image 1</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Fiber & Weaving</span>
+              <span class="price-tag">₹2,450</span>
+              <p>Image 2</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Fiber & Weaving</span>
+              <span class="price-tag">₹2,450</span>
+              <p>Image 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="cdot active"></span>
+          <span class="cdot"></span>
+          <span class="cdot"></span>
+        </div>
+      </div>
+
+      <div class="post-actions">
+        <div class="left-actions">
+          <button class="action-btn like-btn" data-liked="false">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span class="like-count">128</span>
+          </button>
+          <button class="action-btn comment-btn">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span>24</span>
+          </button>
+          <button class="action-btn share-btn">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </div>
+        <button class="action-btn pin-btn" data-pinned="false">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="post-caption">
+        <span class="username">@username</span> Handwoven banana fiber basket, made with love from our village. Each piece takes 3 days to complete.
+      </div>
+      <p class="view-comments">View all 24 comments</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+
+    <!-- Post Component 2 -->
+    <div class="post">
+      <div class="post-header">
+        <div class="post-left">
+          <div class="avatar-placeholder"></div>
+          <div class="post-info">
+            <div class="name-row">
+              <p class="username">@username</p>
+            </div>
+            <div class="skills-row">
+              <span class="skill">Woodwork Artist</span>
+              <span class="skill">Carver</span>
+            </div>
+          </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+
+      <div class="carousel" id="carousel-2">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Woodcraft</span>
+              <span class="price-tag">₹4,850</span>
+              <p>Image 1</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Woodcraft</span>
+              <span class="price-tag">₹4,850</span>
+              <p>Image 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="cdot active"></span>
+          <span class="cdot"></span>
+        </div>
+      </div>
+
+      <div class="post-actions">
+        <div class="left-actions">
+          <button class="action-btn like-btn" data-liked="false">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span class="like-count">56</span>
+          </button>
+          <button class="action-btn comment-btn">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span>11</span>
+          </button>
+          <button class="action-btn share-btn">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </div>
+        <button class="action-btn pin-btn" data-pinned="false">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="post-caption">
+        <span class="username">@username</span> Hand carved wooden bowl made from local Naga wood. Totally unique, no two pieces are the same.
+      </div>
+      <p class="view-comments">View all 11 comments</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+
+    <!-- Post Component 3 -->
+    <div class="post">
+      <div class="post-header">
+        <div class="post-left">
+          <div class="avatar-placeholder"></div>
+          <div class="post-info">
+            <div class="name-row">
+              <p class="username">@username</p>
+            </div>
+            <div class="skills-row">
+              <span class="skill">Food Artisan</span>
+              <span class="skill">Heritage Recipe</span>
+            </div>
+          </div>
+        </div>
+        <button class="follow-btn">Follow</button>
+      </div>
+
+      <div class="carousel" id="carousel-3">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Handmade Edibles</span>
+              <span class="price-tag">₹650</span>
+              <p>Image 1</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Handmade Edibles</span>
+              <span class="price-tag">₹650</span>
+              <p>Image 2</p>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="post-image">
+              <span class="cat-tag">Handmade Edibles</span>
+              <span class="price-tag">₹650</span>
+              <p>Image 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="cdot active"></span>
+          <span class="cdot"></span>
+          <span class="cdot"></span>
+        </div>
+      </div>
+
+      <div class="post-actions">
+        <div class="left-actions">
+          <button class="action-btn like-btn" data-liked="false">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span class="like-count">203</span>
+          </button>
+          <button class="action-btn comment-btn">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <span>47</span>
+          </button>
+          <button class="action-btn share-btn">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </div>
+        <button class="action-btn pin-btn" data-pinned="false">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="post-caption">
+        <span class="username">@username</span> Traditional Naga handmade pickle. Made fresh with local ingredients. Limited stock available.
+      </div>
+      <p class="view-comments">View all 47 comments</p>
+      <button class="cart-btn">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav">
+    <button class="nav-btn active">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span>Home</span>
+    </button>
+    <button class="nav-btn">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <span>Explore</span>
+    </button>
+    <button class="nav-btn">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+      <span>Cart</span>
+    </button>
+    <button class="nav-btn">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </svg>
+      <span>Pins</span>
+    </button>
+    <button class="nav-btn">
+      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+      </svg>
+      <span>Profile</span>
+    </button>
+  </div>
+
+</div>
+
+CSS CODE LOOMA TEST 1
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #1a0a02;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #fff;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.app {
+  padding-bottom: 70px;
+}
+
+/* Top Nav */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(26,10,2,0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover { color: #F0C060; }
+
+/* Feed */
+.feed {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Post Component */
+.post {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+
+.post-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B3A2A, #D4762A);
+  flex-shrink: 0;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.username {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.verified {
+  font-size: 11px;
+  color: #F0C060;
+  font-weight: 700;
+}
+
+.skills-row {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  font-size: 10px;
+  color: #F0C060;
+  font-weight: 500;
+  background: rgba(240,192,96,0.12);
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(240,192,96,0.2);
+}
+
+.follow-btn {
+  background: transparent;
+  border: 1px solid #F0C060;
+  color: #F0C060;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.follow-btn:hover {
+  background: #F0C060;
+  color: #3B1408;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: 380px;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: rgba(255,255,255,0.2);
+  font-size: 13px;
+}
+
+.cat-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  color: #F0C060;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(240,192,96,0.3);
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  color: #3B1408;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 0;
+}
+
+.cdot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.3s;
+}
+
+.cdot.active {
+  background: #F0C060;
+  width: 18px;
+  border-radius: 3px;
+}
+
+/* Actions */
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+}
+
+.left-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.action-btn:hover { color: #F0C060; }
+
+.action-btn.liked svg {
+  fill: #ff6b6b;
+  stroke: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.action-btn.pinned svg {
+  fill: #F0C060;
+  stroke: #F0C060;
+  color: #F0C060;
+}
+
+.post-caption {
+  padding: 4px 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+}
+
+.post-caption .username {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.view-comments {
+  padding: 5px 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.view-comments:hover { color: #F0C060; }
+
+.cart-btn {
+  margin: 8px 14px;
+  width: calc(100% - 28px);
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  color: #3B1408;
+  border: none;
+  border-radius: 50px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cart-btn:hover { opacity: 0.9; }
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background: rgba(26,10,2,0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 16px;
+  z-index: 100;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.35);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0 12px;
+}
+
+.nav-btn.active { color: #F0C060; }
+.nav-btn:hover { color: #F0C060; }
+
+JS CODE LOOMA 1.
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #1a0a02;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #fff;
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.app {
+  padding-bottom: 70px;
+}
+
+/* Top Nav */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(26,10,2,0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover { color: #F0C060; }
+
+/* Feed */
+.feed {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Post Component */
+.post {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+
+.post-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B3A2A, #D4762A);
+  flex-shrink: 0;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.username {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.verified {
+  font-size: 11px;
+  color: #F0C060;
+  font-weight: 700;
+}
+
+.skills-row {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  font-size: 10px;
+  color: #F0C060;
+  font-weight: 500;
+  background: rgba(240,192,96,0.12);
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 1px solid rgba(240,192,96,0.2);
+}
+
+.follow-btn {
+  background: transparent;
+  border: 1px solid #F0C060;
+  color: #F0C060;
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.follow-btn:hover {
+  background: #F0C060;
+  color: #3B1408;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.35s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.post-image {
+  width: 100%;
+  height: 380px;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: rgba(255,255,255,0.2);
+  font-size: 13px;
+}
+
+.cat-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  color: #F0C060;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(240,192,96,0.3);
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  color: #3B1408;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 0;
+}
+
+.cdot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.3s;
+}
+
+.cdot.active {
+  background: #F0C060;
+  width: 18px;
+  border-radius: 3px;
+}
+
+/* Actions */
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+}
+
+.left-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.action-btn:hover { color: #F0C060; }
+
+.action-btn.liked svg {
+  fill: #ff6b6b;
+  stroke: #ff6b6b;
+  color: #ff6b6b;
+}
+
+.action-btn.pinned svg {
+  fill: #F0C060;
+  stroke: #F0C060;
+  color: #F0C060;
+}
+
+.post-caption {
+  padding: 4px 14px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+}
+
+.post-caption .username {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.view-comments {
+  padding: 5px 14px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.view-comments:hover { color: #F0C060; }
+
+.cart-btn {
+  margin: 8px 14px;
+  width: calc(100% - 28px);
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  color: #3B1408;
+  border: none;
+  border-radius: 50px;
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cart-btn:hover { opacity: 0.9; }
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background: rgba(26,10,2,0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 16px;
+  z-index: 100;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.35);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0 12px;
+}
+
+.nav-btn.active { color: #F0C060; }
+.nav-btn:hover { color: #F0C060; }
