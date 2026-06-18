@@ -1,0 +1,412 @@
+HTML CODE
+<div class="splash">
+  <div class="glow top"></div>
+  <div class="glow bottom"></div>
+
+  <div class="card">
+    <div class="logo-icon">🧺</div>
+    <h1 class="app-name">looma</h1>
+    <p class="tagline">Create your account</p>
+
+    <div class="form">
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Your full name" />
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="your@email.com" />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <div class="input-wrap">
+          <input type="password" id="password" placeholder="Create a password" />
+          <span class="toggle" onclick="togglePass('password')">Show</span>
+        </div>
+        <div class="strength-bar">
+          <div class="strength-fill" id="strength-fill"></div>
+        </div>
+        <p class="strength-text" id="strength-text"></p>
+        <ul class="requirements" id="requirements">
+          <li id="req-length">At least 8 characters</li>
+          <li id="req-upper">At least one uppercase letter</li>
+          <li id="req-lower">At least one lowercase letter</li>
+          <li id="req-number">At least one number</li>
+          <li id="req-special">At least one special character (!@#$...)</li>
+        </ul>
+      </div>
+
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <div class="input-wrap">
+          <input type="password" id="confirm" placeholder="Repeat your password" />
+          <span class="toggle" onclick="togglePass('confirm')">Show</span>
+        </div>
+        <p class="error-msg" id="match-error"></p>
+      </div>
+
+      <button class="btn-main" onclick="handleSignup()">Create Account</button>
+
+      <p class="signin">
+        Already have an account? <span>Sign in</span>
+      </p>
+      <p class="forgot">
+        <span>Forgot Password?</span>
+      </p>
+    </div>
+  </div>
+
+  <p class="district">Nagaland · 17 Districts</p>
+</div>
+
+
+CSS CODE
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #3B1408 0%, #8B3A2A 30%, #D4762A 65%, #E8A951 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.glow.top {
+  width: 300px; height: 300px;
+  top: -80px; right: -60px;
+  background: radial-gradient(circle, rgba(240,192,96,0.25) 0%, transparent 70%);
+}
+.glow.bottom {
+  width: 250px; height: 250px;
+  bottom: 60px; left: -80px;
+  background: radial-gradient(circle, rgba(139,58,42,0.4) 0%, transparent 70%);
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 32px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.3);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.logo-icon {
+  width: 56px; height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(240,192,96,0.9), rgba(212,118,42,0.9));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 20px rgba(240,192,96,0.4);
+}
+
+.app-name {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.tagline {
+  color: rgba(255,255,255,0.55);
+  font-size: 13px;
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrap input {
+  width: 100%;
+}
+
+.toggle {
+  position: absolute;
+  right: 14px;
+  color: rgba(255,255,255,0.4);
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle:hover {
+  color: #F0C060;
+}
+
+.input-group input {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  transition: border 0.2s;
+  width: 100%;
+}
+
+.input-group input::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+.input-group input:focus {
+  border-color: #F0C060;
+}
+
+.input-group input.error {
+  border-color: #ff6b6b;
+}
+
+.strength-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 4px;
+  transition: width 0.3s, background 0.3s;
+}
+
+.strength-text {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.requirements {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.requirements li {
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  padding-left: 16px;
+  position: relative;
+}
+
+.requirements li::before {
+  content: "x";
+  position: absolute;
+  left: 0;
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
+.requirements li.passed {
+  color: rgba(255,255,255,0.7);
+}
+
+.requirements li.passed::before {
+  content: "v";
+  color: #6bffb8;
+}
+
+.error-msg {
+  font-size: 12px;
+  color: #ff6b6b;
+  min-height: 16px;
+}
+
+.btn-main {
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  color: #3B1408;
+  border: none;
+  border-radius: 50px;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+  box-shadow: 0 4px 24px rgba(240,192,96,0.45);
+  transition: opacity 0.2s;
+}
+
+.btn-main:hover { opacity: 0.9; }
+
+.signin {
+  color: rgba(255,255,255,0.45);
+  font-size: 13px;
+  text-align: center;
+}
+
+.signin span {
+  color: #F0C060;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 13px;
+}
+
+.forgot span {
+  color: rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+.forgot span:hover { color: #F0C060; }
+
+.district {
+  margin-top: 24px;
+  color: rgba(255,255,255,0.25);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+JS CODE
+function togglePass(id) {
+  const input = document.getElementById(id);
+  const toggle = input.nextElementSibling;
+  if (input.type === "password") {
+    input.type = "text";
+    toggle.textContent = "Hide";
+  } else {
+    input.type = "password";
+    toggle.textContent = "Show";
+  }
+}
+
+document.getElementById("password").addEventListener("input", function () {
+  const val = this.value;
+
+  const checks = {
+    "req-length": val.length >= 8,
+    "req-upper": /[A-Z]/.test(val),
+    "req-lower": /[a-z]/.test(val),
+    "req-number": /[0-9]/.test(val),
+    "req-special": /[!@#$%^&*(),.?":{}|<>]/.test(val),
+  };
+
+  let passed = 0;
+  for (let id in checks) {
+    const el = document.getElementById(id);
+    if (checks[id]) { el.classList.add("passed"); passed++; }
+    else { el.classList.remove("passed"); }
+  }
+
+  const fill = document.getElementById("strength-fill");
+  const text = document.getElementById("strength-text");
+  const percent = (passed / 5) * 100;
+  fill.style.width = percent + "%";
+
+  if (passed <= 2) {
+    fill.style.background = "#ff6b6b";
+    text.style.color = "#ff6b6b";
+    text.textContent = "Weak password";
+  } else if (passed <= 3) {
+    fill.style.background = "#F0C060";
+    text.style.color = "#F0C060";
+    text.textContent = "Fair password";
+  } else if (passed <= 4) {
+    fill.style.background = "#6bffb8";
+    text.style.color = "#6bffb8";
+    text.textContent = "Good password";
+  } else {
+    fill.style.background = "#6bffb8";
+    text.style.color = "#6bffb8";
+    text.textContent = "Strong password";
+  }
+});
+
+document.getElementById("confirm").addEventListener("input", function () {
+  const password = document.getElementById("password").value;
+  const error = document.getElementById("match-error");
+  const confirmInput = document.getElementById("confirm");
+  if (this.value !== password) {
+    error.textContent = "Passwords do not match";
+    confirmInput.classList.add("error");
+  } else {
+    error.textContent = "";
+    confirmInput.classList.remove("error");
+  }
+});
+
+function handleSignup() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const confirm = document.getElementById("confirm").value;
+
+  if (!name || !email || !password || !confirm) {
+    alert("Please fill in all fields");
+    return;
+  }
+  if (password !== confirm) {
+    alert("Passwords do not match");
+    return;
+  }
+  alert("Account created successfully! Welcome to Looma.");
+}
