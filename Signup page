@@ -1,0 +1,313 @@
+html coode for sign up 
+
+<div class="intro">
+  <div class="glow top"></div>
+  <div class="glow bottom"></div>
+
+  <div class="slides">
+
+    <div class="slide active">
+      <div class="image-placeholder">
+        <p>Image coming soon</p>
+      </div>
+      <h2>Your craft deserves more than a local market</h2>
+      <p>You put your heart into every piece. It is time the world sees it.</p>
+    </div>
+
+    <div class="slide">
+      <div class="image-placeholder">
+        <p>Image coming soon</p>
+      </div>
+      <h2>Buyers are looking for exactly what you make</h2>
+      <p>People everywhere are searching for authentic handmade products. Be found.</p>
+    </div>
+
+    <div class="slide">
+      <div class="image-placeholder">
+        <p>Image coming soon</p>
+      </div>
+      <h2>Set up your shop in minutes, sell to anyone</h2>
+      <p>No middlemen. No hidden fees. Just you and your buyers.</p>
+    </div>
+
+    <div class="slide">
+      <div class="image-placeholder">
+        <p>Image coming soon</p>
+      </div>
+      <h2>Every tradition, every technique, every craft represented</h2>
+      <p>Looma is built for Nagaland, celebrating every craft and every maker.</p>
+    </div>
+
+    <div class="slide">
+      <div class="image-placeholder">
+        <p>Image coming soon</p>
+      </div>
+      <h2>Your craft. Your price. Your story.</h2>
+      <p>Join the community of Naga artists and buyers on Looma.</p>
+    </div>
+
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="actions">
+    <button class="btn-prev" id="prev-btn">Previous</button>
+    <button class="btn-main" id="next-btn">Next</button>
+  </div>
+
+  <p class="skip" id="skip-btn">Skip intro</p>
+
+  <p class="district">Nagaland · 17 Districts</p>
+</div>
+
+CSS CODE
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #3B1408 0%, #8B3A2A 30%, #D4762A 65%, #E8A951 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 24px;
+}
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.glow.top {
+  width: 300px; height: 300px;
+  top: -80px; right: -60px;
+  background: radial-gradient(circle, rgba(240,192,96,0.25) 0%, transparent 70%);
+}
+.glow.bottom {
+  width: 250px; height: 250px;
+  bottom: 60px; left: -80px;
+  background: radial-gradient(circle, rgba(139,58,42,0.4) 0%, transparent 70%);
+}
+
+.slides {
+  width: 100%;
+  max-width: 360px;
+}
+
+.slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 240px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px dashed rgba(255,255,255,0.25);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.image-placeholder p {
+  color: rgba(255,255,255,0.25);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.slide h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 14px;
+  letter-spacing: -0.3px;
+}
+
+.slide p {
+  color: rgba(255,255,255,0.55);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #F0C060;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.actions {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.btn-prev {
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.7);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50px;
+  padding: 13px 24px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-prev:hover {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+
+.btn-prev:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.btn-main {
+  background: linear-gradient(135deg, #F0C060, #D4762A);
+  color: #3B1408;
+  border: none;
+  border-radius: 50px;
+  padding: 13px 32px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(240,192,96,0.45);
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.btn-main:hover { opacity: 0.9; }
+
+.skip {
+  margin-top: 18px;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+  letter-spacing: 0.3px;
+}
+
+.skip:hover { color: #F0C060; }
+
+.district {
+  margin-top: 28px;
+  color: rgba(255,255,255,0.25);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+JS CODE
+window.addEventListener("load", function () {
+  let current = 0;
+  const total = 5;
+
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  const nextBtn = document.getElementById("next-btn");
+  const prevBtn = document.getElementById("prev-btn");
+  const skipBtn = document.getElementById("skip-btn");
+
+  function goToSlide(index) {
+    slides[current].classList.remove("active");
+    dots[current].classList.remove("active");
+    current = index;
+    slides[current].classList.add("active");
+    dots[current].classList.add("active");
+
+    if (current === total - 1) {
+      nextBtn.textContent = "Get Started";
+    } else {
+      nextBtn.textContent = "Next";
+    }
+
+    if (current === 0) {
+      prevBtn.disabled = true;
+    } else {
+      prevBtn.disabled = false;
+    }
+  }
+
+  goToSlide(0);
+
+  nextBtn.addEventListener("click", function () {
+    if (current < total - 1) {
+      goToSlide(current + 1);
+    } else {
+      alert("Welcome to Looma!");
+    }
+  });
+
+  prevBtn.addEventListener("click", function () {
+    if (current > 0) {
+      goToSlide(current - 1);
+    }
+  });
+
+  skipBtn.addEventListener("click", function () {
+    alert("Welcome to Looma!");
+  });
+
+  dots.forEach(function (dot, index) {
+    dot.addEventListener("click", function () {
+      goToSlide(index);
+    });
+  });
+});
